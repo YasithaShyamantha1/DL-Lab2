@@ -1,0 +1,13 @@
+Task 2
+
+Question 1: What happens when the number of hidden nodes increases?
+
+As the number of hidden nodes increases, the model’s capacity to learn complex patterns increases. With more nodes, the network can represent more intricate decision boundaries, potentially improving accuracy on non-linearly separable data .
+However, too many nodes (e.g., 50) may lead to overfitting, where the model memorizes the training data but performs poorly on unseen data. You may observe high accuracy for larger n_h, but check if the decision boundary becomes overly complex or jagged.
+
+
+Question 2: Can you explain the pattern of the accuracy when the hidden nodes increase?
+
+For small n_h , the model may underfit, resulting in lower accuracy because it lacks the capacity to capture the data’s complexity.
+For medium n_h , accuracy typically increases as the model better fits the data.
+For large n_h, accuracy may plateau or slightly decrease if overfitting occurs, especially if the dataset is small or noisy. The pattern depends on the dataset’s complexity and the number of iterations.
